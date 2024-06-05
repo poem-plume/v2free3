@@ -52,8 +52,8 @@ if __name__ == "__main__":
                         level=logging.INFO, format=LOG_FORMAT)
 
     parser = argparse.ArgumentParser(description='V2free 自动签到脚本')
-    parser.add_argument('--username', type=str, help='您的账号(仅支持单个)')
-    parser.add_argument('--password', type=str, help='您的密码(仅支持单个)')
+    parser.add_argument('--username', type=str, help='2840574380@qq.com')
+    parser.add_argument('--password', type=str, help='cxy6871800')
     args = parser.parse_args()
     helper = CheckIn(args.username, args.password)
     helper.check_in()
